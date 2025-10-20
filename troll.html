@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lê Chí Thành | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="info">
+      <h1>Lê Chí Thành</h1>
+      <p><strong>About me:</strong> Tôi là sinh viên năm 2 của Trường ĐH Bình Dương BDU, ngành Công Nghệ Thông Tin.</p>
+      <p><strong>Age:</strong> 19</p>
+      <p><strong>Birthday:</strong> 08/12/06</p>
+      <p><strong>Hobby:</strong> Chơi Game và Xem Phim</p>
+      <p><strong>Kinh Nghiệm:</strong> Đang học tập</p>
+      <p><strong>Dự án:</strong> None</p>
+
+      <div class="skills">
+        <h3>Kỹ Năng Ngoại Ngữ</h3>
+        <div class="skill">
+          <div class="skill-name">Tiếng Anh</div>
+          <div class="bar">
+            <div class="progress" data-level="90"></div>
+            <div class="percent">90%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Tiếng Nhật</div>
+          <div class="bar">
+            <div class="progress" data-level="20"></div>
+            <div class="percent">20%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-title">Liên hệ</div>
+      <div class="socials">
+        <a href="https://www.facebook.com/karistiaaa0812" target="_blank"><i class="ri-facebook-fill"></i></a>
+        <a href="https://www.youtube.com/@karist1a" target="_blank"><i class="ri-youtube-fill"></i></a>
+        <a href="mailto:lechithanhsaigon@gmail.com"><i class="ri-mail-fill"></i></a>
+        <a href="https://steamcommunity.com/id/karistia/" target="_blank"><i class="ri-steam-fill"></i></a>
+      </div>
+    </div>
+
+    <div class="avatar">
+      <img src="2009ca49649de9c3b08c.jpg" alt="avatar">
+    </div>
+  </div>
+
+  <footer>Designed by Lê Chí Thành</footer>
+
+  <script>
+    document.addEventListener("mousemove", e => {
+      const trail = document.createElement("div");
+      trail.classList.add("trail");
+      trail.style.left = `${e.clientX}px`;
+      trail.style.top = `${e.clientY}px`;
+      document.body.appendChild(trail);
+      setTimeout(() => trail.remove(), 600);
+    });
+  </script>
+</body>
+</html>
